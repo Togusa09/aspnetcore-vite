@@ -11,6 +11,7 @@
     ```bash
     cd AspDotNetCoreVite/src/WebApp
     dotnet new mvc
+    dotnet add package Vite.AspNetCore
     ```
 1. Create Solution
     ```bash
@@ -21,10 +22,11 @@
     ```bash
     npm create vite@latest react-spa -- --template react-ts
     cd react-spa
+    npm add vite-plugin-checker -D
     npm install
-    npm run dev # Runs the dev server
+    npm run dev
     ```
-
+    
 ## Features
 
 1. Intro to vite - basic setup and config (mention paths and different config files)
