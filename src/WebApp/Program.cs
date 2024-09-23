@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddViteServices();
+
 
 var app = builder.Build();
 
@@ -20,7 +22,7 @@ app.UseStaticFiles();
 
 app.UseRouting(); 
 
-//app.UseAuthorization();
+app.UseAuthorization();
 
 //app.MapControllerRoute(name: "blog",
 //    pattern: "api/{*article}",
@@ -54,6 +56,8 @@ app.MapControllerRoute(
 
 //    return next(context);
 //});
+
+app.UseCors();
 
 if (app.Environment.IsDevelopment())
 {
