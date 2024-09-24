@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
 
-    @* This line includes the style from the "main.ts" entrypoint *@
+    @* This line includes the style from the "main.tsx" entrypoint *@
     <link rel="stylesheet" vite-href="~/src/main.tsx" asp-append-version="true" />
 </head>
 <body>
@@ -14,8 +14,8 @@
     @RenderBody()
 </main>
 
-<!-- This line includes your "main.ts" entrypoint -->
-    <script type="module" vite-src="~/src/main.tsx"></script>
+<!-- This line includes your "main.tsx" entrypoint -->
+<script type="module" vite-src="~/src/main.tsx"></script>
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>
