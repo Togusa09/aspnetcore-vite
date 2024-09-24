@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "React Page";
+}
+
+
+@model IEnumerable<string>
+
+<ul>
+@foreach (var filename in @Model)
+{
+    <li>@(filename)</li>
+}
+</ul>
